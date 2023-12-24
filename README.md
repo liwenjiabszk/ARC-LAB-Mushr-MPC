@@ -1,4 +1,6 @@
-# My copy of ACADO-MPC Package form UW-Madison ARC-Lab
+# Implementation of Model Predictive Control on Mushr Car Using ACADO Toolkit
+## Mentor: Prof. Xiangru Xu, University of Wisconsin-Madison
+
 ## About the project  
 
 This project implements ACADO-generated Model Predictive Control (MPC) for an mini autonous vehicle based on MuSHR Car Autonomy Stack from University of Washington. The controller is able to track a pre-defined trajectory with 10^-3 s level computation time, and this package have user friendly interfaces for modification of trajectories and controller formulations. We demonstrate the trajectory tracking performance in simulation and real-time onboard experiment. The exact workflow of the system, the formulation of the controller, and details for implementing the controllers are documented below.
