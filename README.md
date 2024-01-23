@@ -29,7 +29,7 @@ Lastly, this package also requires motion capture to provide feedback state of t
 Shown in the image below, real-time MPC control of the MuSHR Car is carried out by running several aspects.
 
 <p align="center">
-  <img src="https://github.com/wisc-arclab/arclab_vehicles/blob/ACADO-MPC/images/ACADO-MPC%20Workflow.png" width=70% height=70% alt>
+  <img src="https://github.com/liwenjiabszk/ARC-LAB-Mushr-MPC/blob/main/images/ACADO-MPC%20Workflow.png" width=70% height=70% alt>
 </p>
 
 Base Station with Motive software will process data from motion capture system and feed the state of the vehicle to the Mocap ROS node on the onboard computer ROS environment, which will publish the vehicle state as a ROS topic. Then the MPC solver node will subscribe the state topic and optimize over horizons with dynamics and input constraints to get a array of optimal inputs in the prospective time to minimize the cost function. The first of input array, the immediate one to be performed, will be published as another ROS topic. The input topic will be subscribed by the autonomy stack of the MuSHR Car, and will drive the drivetrain to turn the steering and power the wheel in reality. This workflow will iterate in real-time by ROS, and new inputs will be computed based on updated state of the vehicle. To control the onboard computer remotely and visualize real-time data, multi-machine ROS master is used on the base station as a human interface.
