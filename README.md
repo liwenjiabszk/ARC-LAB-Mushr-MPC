@@ -123,6 +123,6 @@ cd directory_to_mushr_mpc_continuous/
 ```
 Now, MuSHR should start moving following the predefined trajectory, as this [recorded video](https://drive.google.com/file/d/1sUGZVHpW2Q1ipanKkKN7wSeb59a1EsZc/view?usp=sharing) shows.
 <p align="center">
-  <img src="https://github.com/wisc-arclab/arclab_vehicles/blob/ACADO-MPC/images/experiment.PNG" width=50% height=50% alt>
+  <img src="https://github.com/liwenjiabszk/ARC-LAB-Mushr-MPC/blob/main/images/experiment.PNG" width=50% height=50% alt>
 </p>
 
