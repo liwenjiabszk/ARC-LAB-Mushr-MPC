@@ -83,7 +83,7 @@ To implement the simulation tester, please download matlab filed from [simulatio
 A tracked circle in simulation is shown below:
 
 <p align="center">
-  <img src="https://github.com/wisc-arclab/arclab_vehicles/blob/ACADO-MPC/images/conti_sim.jpg" width=50% height=50% alt>
+  <img src="https://github.com/liwenjiabszk/ARC-LAB-Mushr-MPC/blob/main/images/conti_sim.jpg" width=50% height=50% alt>
 </p>
 
 ## Experiment
