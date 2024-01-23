@@ -38,13 +38,13 @@ Base Station with Motive software will process data from motion capture system a
 The controller is formulated as below, in equation (1) to (4), where $x_t$ is the actual state of the robot at real time $t$, and $x_{i|t}$ and $u_{i|t}$ is the prediction states and inputs of the robot at horizon $i$ and real time $t$. In addition, $x_{r{i|t}}$ and $u_{r{i|t}}$ are the reference states and inputs of the robot. Equation (1) is the cost function of the controller to minimize, (2) is the robot dynamics constraint and (3) is the input constraint. Equation (4) states the first state over horizons is the current state in real time. The intuition is to get the optimal input over $h$ future horizons based on the constraints, and take the first input $u_{t|t}$ as the actual input $u(x(t)) = u_{t|t}$.
 
 <p align="center">
-  <img src="https://github.com/wisc-arclab/arclab_vehicles/blob/ACADO-MPC/images/formulation_1.png" width=70% height=70% alt>
+  <img src="https://github.com/liwenjiabszk/ARC-LAB-Mushr-MPC/blob/main/images/formulation_1.png" width=70% height=70% alt>
 </p>
 
 The constriants of dynamics in equation (2) is detailed in equation (5) to (7) below, input constraint (3) is detailed in equation (8) and (9), and the weight matrix in cost function (1) is designed in equation (10) below, and prediction time is designed to be 1 second.
 
 <p align="center">
-  <img src="https://github.com/wisc-arclab/arclab_vehicles/blob/ACADO-MPC/images/formulation_2.png" width=40% height=40% alt>
+  <img src="https://github.com/liwenjiabszk/ARC-LAB-Mushr-MPC/blob/main/images/formulation_2.png" width=40% height=40% alt>
 </p>
 
 ## Code Generation
